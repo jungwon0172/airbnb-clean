@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>문의 — 청소 알바 근무일지</title>
+<meta name="description" content="청소 알바 근무일지 사이트에 대한 문의, 정정 요청, 광고 제휴 연락처입니다.">
+<link rel="canonical" href="https://your-domain.example/contact.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="문의 — 청소 알바 근무일지">
+<meta property="og:description" content="청소 알바 근무일지 사이트에 대한 문의, 정정 요청, 광고 제휴 연락처입니다.">
+<meta property="og:locale" content="ko_KR">
+<style>
+  :root{
+    --paper: #F6F2E9;
+    --paper-deep: #EFE8D8;
+    --ink: #2B3A3A;
+    --ink-soft: #4C5F5C;
+    --brass: #B08A2E;
+    --brass-deep: #8C6C1F;
+    --sage: #7C8F82;
+    --stamp-red: #A8422F;
+    --line: #D8CFB8;
+    --card: #FFFDF7;
+  }
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Noto Sans KR', sans-serif;
+    line-height:1.6;
+    background-image:
+      repeating-linear-gradient(0deg, transparent, transparent 34px, rgba(43,58,58,0.035) 35px);
+  }
+  .mono{ font-family:'IBM Plex Mono', monospace; }
+  .serif{ font-family:'Gowun Batang', serif; }
+
+  .wrap{ max-width:920px; margin:0 auto; padding:0 24px; }
+
+  /* HEADER */
+  header.hero{
+    border-bottom:2px solid var(--ink);
+    padding:56px 0 40px;
+    position:relative;
+  }
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12.5px;
+    letter-spacing:.14em;
+    color:var(--brass-deep);
+    text-transform:uppercase;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:18px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:8px;height:8px;
+    background:var(--stamp-red);
+    border-radius:50%;
+    display:inline-block;
+  }
+  h1{
+    font-family:'Gowun Batang', serif;
+    font-size:clamp(32px, 5vw, 50px);
+    line-height:1.25;
+    margin:0 0 18px;
+    font-weight:700;
+  }
+  .hero-sub{
+    max-width:560px;
+    color:var(--ink-soft);
+    font-size:16px;
+    margin-bottom:28px;
+  }
+  .stamp{
+    position:absolute;
+    top:48px; right:24px;
+    width:104px; height:104px;
+    border:2.5px solid var(--stamp-red);
+    border-radius:50%;
+    color:var(--stamp-red);
+    display:flex; align-items:center; justify-content:center;
+    text-align:center;
+    transform:rotate(-11deg);
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    font-weight:600;
+    letter-spacing:.06em;
+    line-height:1.35;
+    opacity:.82;
+  }
+  @media (max-width:640px){ .stamp{ display:none; } }
+
+  .meta-row{
+    display:flex; flex-wrap:wrap; gap:10px;
+  }
+  .tag{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    border:1px solid var(--line);
+    background:var(--card);
+    padding:6px 12px;
+    border-radius:2px;
+    color:var(--ink-soft);
+  }
+
+  section{ padding:52px 0; border-bottom:1px solid var(--line); }
+  section:last-of-type{ border-bottom:none; }
+
+  .section-head{
+    display:flex;
+    align-items:baseline;
+    gap:14px;
+    margin-bottom:8px;
+  }
+  .index-no{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:13px;
+    color:var(--brass-deep);
+    border:1px solid var(--brass-deep);
+    padding:2px 8px;
+  }
+  h2{
+    font-family:'Gowun Batang', serif;
+    font-size:26px;
+    margin:0;
+  }
+  .section-note{
+    color:var(--ink-soft);
+    font-size:14.5px;
+    margin:10px 0 28px;
+    max-width:640px;
+  }
+
+  /* RATE LEDGER TABLE */
+  .ledger{
+    width:100%;
+    border-collapse:collapse;
+    background:var(--card);
+    border:1px solid var(--line);
+  }
+  .ledger th, .ledger td{
+    padding:14px 16px;
+    text-align:left;
+    border-bottom:1px solid var(--line);
+    font-size:14.5px;
+  }
+  .ledger th{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11.5px;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    background:var(--paper-deep);
+  }
+  .ledger tr:last-child td{ border-bottom:none; }
+  .ledger td.amt{
+    font-family:'IBM Plex Mono', monospace;
+    font-weight:600;
+    color:var(--brass-deep);
+    white-space:nowrap;
+  }
+  .ledger td.region{ font-weight:600; }
+  .ledger tr:hover{ background:#FBF7EC; }
+
+  /* JOB TICKET CARDS */
+  .tickets{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+  }
+  @media (max-width:640px){ .tickets{ grid-template-columns:1fr; } }
+  .ticket{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-left:4px solid var(--sage);
+    padding:20px 20px 18px;
+    position:relative;
+  }
+  .ticket::after{
+    content:"";
+    position:absolute;
+    left:-1px; bottom:-1px;
+    width:calc(100% + 2px);
+    height:0;
+    border-bottom:1.5px dashed var(--line);
+  }
+  .ticket h3{
+    font-family:'Gowun Batang', serif;
+    font-size:18px;
+    margin:0 0 8px;
+  }
+  .ticket p{
+    font-size:13.8px;
+    color:var(--ink-soft);
+    margin:0 0 12px;
+  }
+  .ticket-foot{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12.5px;
+    color:var(--brass-deep);
+    border-top:1px dotted var(--line);
+    padding-top:10px;
+  }
+
+  /* TIPS */
+  .tip-list{
+    counter-reset:tip;
+    display:flex;
+    flex-direction:column;
+    gap:0;
+  }
+  .tip{
+    counter-increment:tip;
+    display:grid;
+    grid-template-columns:44px 1fr;
+    gap:16px;
+    padding:18px 0;
+    border-bottom:1px solid var(--line);
+  }
+  .tip:last-child{ border-bottom:none; }
+  .tip::before{
+    content:counter(tip, decimal-leading-zero);
+    font-family:'IBM Plex Mono', monospace;
+    color:var(--brass);
+    font-size:15px;
+    padding-top:2px;
+  }
+  .tip h4{
+    margin:0 0 4px;
+    font-size:15.5px;
+    font-weight:600;
+  }
+  .tip p{
+    margin:0;
+    font-size:14px;
+    color:var(--ink-soft);
+  }
+
+  /* OUTBOUND */
+  .outbound{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:16px;
+  }
+  @media (max-width:640px){ .outbound{ grid-template-columns:1fr; } }
+  .out-card{
+    display:block;
+    background:var(--ink);
+    color:var(--paper);
+    text-decoration:none;
+    padding:22px 22px;
+    border-radius:2px;
+    transition:transform .15s ease, background .15s ease;
+  }
+  .out-card:hover{ transform:translateY(-2px); background:#243230; }
+  .out-card .name{
+    font-family:'Gowun Batang', serif;
+    font-size:19px;
+    margin-bottom:6px;
+  }
+  .out-card .desc{
+    font-size:13px;
+    color:#C9D6D1;
+  }
+  .out-card .arrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    color:var(--brass);
+    margin-top:14px;
+    display:inline-block;
+  }
+
+  .disclaimer{
+    background:var(--paper-deep);
+    border:1px solid var(--line);
+    padding:18px 20px;
+    font-size:13px;
+    color:var(--ink-soft);
+    margin-top:24px;
+  }
+  .disclaimer strong{ color:var(--ink); }
+
+  footer{
+    padding:36px 0 60px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    color:var(--ink-soft);
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:10px;
+  }
+  footer nav a{
+    color:var(--ink-soft);
+    margin-left:14px;
+    text-decoration:none;
+    border-bottom:1px dotted var(--line);
+  }
+  footer nav a:first-child{ margin-left:0; }
+  footer nav a:hover{ color:var(--brass-deep); }
+
+  .sitenav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:16px 0;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12.5px;
+  }
+  .sitenav .brand{
+    color:var(--ink);
+    text-decoration:none;
+    font-weight:600;
+    letter-spacing:.02em;
+  }
+  .sitenav .links a{
+    color:var(--ink-soft);
+    text-decoration:none;
+    margin-left:18px;
+  }
+  .sitenav .links a:hover{ color:var(--brass-deep); }
+
+  .ad-slot{
+    margin:8px 0 0;
+    padding:10px;
+    border:1px dashed var(--line);
+    text-align:center;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    color:var(--ink-soft);
+    background:var(--paper-deep);
+  }
+
+  .faq{
+    display:flex;
+    flex-direction:column;
+    gap:0;
+  }
+  .faq-item{
+    border-bottom:1px solid var(--line);
+    padding:16px 0;
+  }
+  .faq-item:last-child{ border-bottom:none; }
+  .faq-item h4{
+    margin:0 0 6px;
+    font-size:15px;
+    font-family:'Gowun Batang', serif;
+  }
+  .faq-item p{
+    margin:0;
+    font-size:14px;
+    color:var(--ink-soft);
+  }
+</style>
+
+</head>
+<body>
+
+<div class="wrap">
+  <div class="sitenav">
+    <a class="brand" href="index.html">청소 알바 근무일지</a>
+    <nav class="links">
+      <a href="about.html">사이트 소개</a>
+      <a href="contact.html">문의</a>
+      <a href="privacy.html">개인정보처리방침</a>
+    </nav>
+  </div>
+
+  <header class="hero" style="border-bottom:2px solid var(--ink); padding:40px 0 32px;">
+    <div class="eyebrow">문의</div>
+    <h1 style="font-size:clamp(28px,4vw,40px);">문의하기</h1>
+    <p class="hero-sub">사이트 내용에 대한 정정 요청, 저작권 관련 문의, 광고 제휴 문의는 아래 메일로 연락해 주세요.</p>
+  </header>
+
+  <section style="border-bottom:none;">
+    <div class="section-head"><span class="index-no">01</span><h2>연락처</h2></div>
+    <table class="ledger" style="margin-top:8px;">
+      <tbody>
+        <tr><td class="region" style="width:160px;">이메일</td><td class="amt">yjw2172@naver.com</td></tr>
+        <tr><td class="region">답변 소요</td><td>영업일 기준 3~5일 이내</td></tr>
+        <tr><td class="region">주요 문의 유형</td><td>정보 오류 신고 · 저작권 관련 · 광고 제휴</td></tr>
+      </tbody>
+    </table>
+    <div class="disclaimer" style="margin-top:24px;">
+      <strong>안내.</strong> 본 사이트는 개인 운영 정보 사이트로, 실제 알바 채용·급여와 관련된 상담이나 중개는 진행하지 않습니다. 채용 관련 문의는 각 공고를 게시한 당근 알바, 동네알바 등 원본 플랫폼으로 연락해 주세요.
+    </div>
+  </section>
+
+  <footer>
+    <span>청소 알바 근무일지 — 정보 제공 목적의 기록 페이지</span>
+    <nav>
+      <a href="about.html">사이트 소개</a>
+      <a href="contact.html">문의</a>
+      <a href="privacy.html">개인정보처리방침</a>
+    </nav>
+    <span>마지막 기록 갱신 · 2026</span>
+  </footer>
+
+</div>
+
+</body>
+</html>
