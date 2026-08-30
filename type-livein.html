@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="748d820a300dcdc5c98d3c4fa97f9b291d7386e2" />
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>거주형 청소 알바 상세 가이드 — 청소 알바 근무일지</title>
+<meta name="description" content="숙소에 거주하며 청소를 담당하는 거주형 청소 알바의 계약 확인 사항을 정리했습니다.">
+<link rel="canonical" href="https://your-domain.example/type-livein.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="거주형 청소 알바 상세 가이드 — 청소 알바 근무일지">
+<meta property="og:description" content="숙소에 거주하며 청소를 담당하는 거주형 청소 알바의 계약 확인 사항을 정리했습니다.">
+<meta property="og:locale" content="ko_KR">
+<style>
+  :root{
+    --paper: #F6F2E9;
+    --paper-deep: #EFE8D8;
+    --ink: #2B3A3A;
+    --ink-soft: #4C5F5C;
+    --brass: #B08A2E;
+    --brass-deep: #8C6C1F;
+    --sage: #7C8F82;
+    --stamp-red: #A8422F;
+    --line: #D8CFB8;
+    --card: #FFFDF7;
+  }
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Noto Sans KR', sans-serif;
+    line-height:1.6;
+    background-image:
+      repeating-linear-gradient(0deg, transparent, transparent 34px, rgba(43,58,58,0.035) 35px);
+  }
+  .mono{ font-family:'IBM Plex Mono', monospace; }
+  .serif{ font-family:'Gowun Batang', serif; }
+
+  .wrap{ max-width:920px; margin:0 auto; padding:0 24px; }
+
+  /* HEADER */
+  header.hero{
+    border-bottom:2px solid var(--ink);
+    padding:56px 0 40px;
+    position:relative;
+  }
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12.5px;
+    letter-spacing:.14em;
+    color:var(--brass-deep);
+    text-transform:uppercase;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:18px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:8px;height:8px;
+    background:var(--stamp-red);
+    border-radius:50%;
+    display:inline-block;
+  }
+  h1{
+    font-family:'Gowun Batang', serif;
+    font-size:clamp(32px, 5vw, 50px);
+    line-height:1.25;
+    margin:0 0 18px;
+    font-weight:700;
+  }
+  .hero-sub{
+    max-width:560px;
+    color:var(--ink-soft);
+    font-size:16px;
+    margin-bottom:28px;
+  }
+  .stamp{
+    position:absolute;
+    top:48px; right:24px;
+    width:104px; height:104px;
+    border:2.5px solid var(--stamp-red);
+    border-radius:50%;
+    color:var(--stamp-red);
+    display:flex; align-items:center; justify-content:center;
+    text-align:center;
+    transform:rotate(-11deg);
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    font-weight:600;
+    letter-spacing:.06em;
+    line-height:1.35;
+    opacity:.82;
+  }
+  @media (max-width:640px){ .stamp{ display:none; } }
+
+  .meta-row{
+    display:flex; flex-wrap:wrap; gap:10px;
+  }
+  .tag{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    border:1px solid var(--line);
+    background:var(--card);
+    padding:6px 12px;
+    border-radius:2px;
+    color:var(--ink-soft);
+  }
+
+  section{ padding:52px 0; border-bottom:1px solid var(--line); }
+  section:last-of-type{ border-bottom:none; }
+
+  .section-head{
+    display:flex;
+    align-items:baseline;
+    gap:14px;
+    margin-bottom:8px;
+  }
+  .index-no{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:13px;
+    color:var(--brass-deep);
+    border:1px solid var(--brass-deep);
+    padding:2px 8px;
+  }
+  h2{
+    font-family:'Gowun Batang', serif;
+    font-size:26px;
+    margin:0;
+  }
+  .section-note{
+    color:var(--ink-soft);
+    font-size:14.5px;
+    margin:10px 0 28px;
+    max-width:640px;
+  }
+
+  /* RATE LEDGER TABLE */
+  .ledger{
+    width:100%;
+    border-collapse:collapse;
+    background:var(--card);
+    border:1px solid var(--line);
+  }
+  .ledger th, .ledger td{
+    padding:14px 16px;
+    text-align:left;
+    border-bottom:1px solid var(--line);
+    font-size:14.5px;
+  }
+  .ledger th{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11.5px;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    background:var(--paper-deep);
+  }
+  .ledger tr:last-child td{ border-bottom:none; }
+  .ledger td.amt{
+    font-family:'IBM Plex Mono', monospace;
+    font-weight:600;
+    color:var(--brass-deep);
+    white-space:nowrap;
+  }
+  .ledger td.region{ font-weight:600; }
+  .ledger tr:hover{ background:#FBF7EC; }
+
+  /* JOB TICKET CARDS */
+  .tickets{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+  }
+  @media (max-width:640px){ .tickets{ grid-template-columns:1fr; } }
+  .ticket{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-left:4px solid var(--sage);
+    padding:20px 20px 18px;
+    position:relative;
+    display:block;
+    text-decoration:none;
+    color:var(--ink);
+    transition:transform .15s ease, box-shadow .15s ease, border-left-color .15s ease;
+  }
+  .ticket:hover{
+    transform:translateY(-2px);
+    box-shadow:0 4px 14px rgba(43,58,58,0.08);
+    border-left-color:var(--brass);
+  }
+  .ticket h3::after{
+    content:" →";
+    color:var(--brass-deep);
+    font-family:'IBM Plex Mono', monospace;
+    font-size:14px;
+  }
+  .ticket::after{
+    content:"";
+    position:absolute;
+    left:-1px; bottom:-1px;
+    width:calc(100% + 2px);
+    height:0;
+    border-bottom:1.5px dashed var(--line);
+  }
+  .ticket h3{
+    font-family:'Gowun Batang', serif;
+    font-size:18px;
+    margin:0 0 8px;
+  }
+  .ticket p{
+    font-size:13.8px;
+    color:var(--ink-soft);
+    margin:0 0 12px;
+  }
+  .ticket-foot{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12.5px;
+    color:var(--brass-deep);
+    border-top:1px dotted var(--line);
+    padding-top:10px;
+  }
+
+  /* TIPS */
+  .tip-list{
+    counter-reset:tip;
+    display:flex;
+    flex-direction:column;
+    gap:0;
+  }
+  .tip{
+    counter-increment:tip;
+    display:grid;
+    grid-template-columns:44px 1fr;
+    gap:16px;
+    padding:18px 0;
+    border-bottom:1px solid var(--line);
+  }
+  .tip:last-child{ border-bottom:none; }
+  .tip::before{
+    content:counter(tip, decimal-leading-zero);
+    font-family:'IBM Plex Mono', monospace;
+    color:var(--brass);
+    font-size:15px;
+    padding-top:2px;
+  }
+  .tip h4{
+    margin:0 0 4px;
+    font-size:15.5px;
+    font-weight:600;
+  }
+  .tip p{
+    margin:0;
+    font-size:14px;
+    color:var(--ink-soft);
+  }
+
+  /* OUTBOUND */
+  .outbound{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:16px;
+  }
+  @media (max-width:640px){ .outbound{ grid-template-columns:1fr; } }
+  .out-card{
+    display:block;
+    background:var(--ink);
+    color:var(--paper);
+    text-decoration:none;
+    padding:22px 22px;
+    border-radius:2px;
+    transition:transform .15s ease, background .15s ease;
+  }
+  .out-card:hover{ transform:translateY(-2px); background:#243230; }
+  .out-card .name{
+    font-family:'Gowun Batang', serif;
+    font-size:19px;
+    margin-bottom:6px;
+  }
+  .out-card .desc{
+    font-size:13px;
+    color:#C9D6D1;
+  }
+  .out-card .arrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    color:var(--brass);
+    margin-top:14px;
+    display:inline-block;
+  }
+
+  .disclaimer{
+    background:var(--paper-deep);
+    border:1px solid var(--line);
+    padding:18px 20px;
+    font-size:13px;
+    color:var(--ink-soft);
+    margin-top:24px;
+  }
+  .disclaimer strong{ color:var(--ink); }
+
+  footer{
+    padding:36px 0 60px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    color:var(--ink-soft);
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:10px;
+  }
+  footer nav a{
+    color:var(--ink-soft);
+    margin-left:14px;
+    text-decoration:none;
+    border-bottom:1px dotted var(--line);
+  }
+  footer nav a:first-child{ margin-left:0; }
+  footer nav a:hover{ color:var(--brass-deep); }
+
+  .sitenav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:16px 0;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12.5px;
+  }
+  .sitenav .brand{
+    color:var(--ink);
+    text-decoration:none;
+    font-weight:600;
+    letter-spacing:.02em;
+  }
+  .sitenav .links a{
+    color:var(--ink-soft);
+    text-decoration:none;
+    margin-left:18px;
+  }
+  .sitenav .links a:hover{ color:var(--brass-deep); }
+
+  .ad-slot{
+    margin:8px 0 0;
+    padding:8px;
+    border:1px dashed var(--line);
+    text-align:center;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    color:var(--ink-soft);
+    background:var(--paper-deep);
+    max-height:100px;
+    min-height:60px;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .ad-slot ins{ max-height:84px; }
+
+  .faq{
+    display:flex;
+    flex-direction:column;
+    gap:0;
+  }
+  .faq-item{
+    border-bottom:1px solid var(--line);
+    padding:16px 0;
+  }
+  .faq-item:last-child{ border-bottom:none; }
+  .faq-item h4{
+    margin:0 0 6px;
+    font-size:15px;
+    font-family:'Gowun Batang', serif;
+  }
+  .faq-item p{
+    margin:0;
+    font-size:14px;
+    color:var(--ink-soft);
+  }
+</style>
+
+</head>
+<body>
+
+<div class="wrap">
+  <div class="sitenav">
+    <a class="brand" href="index.html">청소 알바 근무일지</a>
+    <nav class="links">
+      <a href="guide.html">알바 잘 찾는 법</a>
+      <a href="about.html">사이트 소개</a>
+      <a href="contact.html">문의</a>
+      <a href="privacy.html">개인정보처리방침</a>
+    </nav>
+  </div>
+
+  <header class="hero" style="border-bottom:2px solid var(--ink); padding:40px 0 32px;">
+    <div class="eyebrow">업무 유형 상세 · 04</div>
+    <h1 style="font-size:clamp(28px,4vw,40px);">거주형 (특수 케이스)</h1>
+    <p class="hero-sub">숙소에 거주하면서 상시 청소를 담당하는 형태로, 월세 할인 등 조건이 근무와 얽혀 있어 일반 알바보다 계약 내용을 훨씬 꼼꼼히 봐야 합니다.</p>
+    <div class="meta-row">
+      <span class="tag">주 5회 내외</span>
+      <span class="tag">월세 연동</span>
+      <span class="tag">계약서 필수</span>
+    </div>
+  </header>
+
+  <section>
+    <div class="section-head"><span class="index-no">01</span><h2>일반적인 구조</h2></div>
+    
+        <p class="section-note" style="max-width:680px;">보통 '월세 일부 할인 또는 면제 + 소정의 활동비'를 조건으로, 거주자가 해당 숙소(또는 인근 숙소 여러 곳)의 청소를 상시 담당하는 방식입니다. 근무일과 휴무일이 정해져 있는 경우도 있고, 예약이 들어올 때마다 유동적으로 근무하는 경우도 있습니다.</p>
+      
+  </section>
+  <section>
+    <div class="section-head"><span class="index-no">02</span><h2>계약 전 반드시 확인할 것</h2></div>
+    
+        <div class="tip-list">
+          <div class="tip"><div><h4>월세 할인분과 활동비의 정확한 금액</h4><p>"할인"이라는 표현이 모호하게 쓰이는 경우가 많습니다. 정확히 몇 만원이 차감되는지, 활동비는 별도로 지급되는지 숫자로 확인하세요.</p></div></div>
+          <div class="tip"><div><h4>계약서에 청소 의무가 명시되는지</h4><p>구두 약속만으로 진행하면 나중에 조건이 바뀌었을 때 대응이 어렵습니다. 임대차계약서 또는 별도 근로계약서에 청소 의무와 대가가 명시되는지 확인하세요.</p></div></div>
+          <div class="tip"><div><h4>퇴거·계약 해지 조건</h4><p>청소를 그만두면 월세 할인도 함께 사라지는지, 통보 기간은 얼마나 되는지 미리 확인해야 갑작스러운 월세 인상에 대비할 수 있습니다.</p></div></div>
+          <div class="tip"><div><h4>최소 근무 횟수와 대체 인력 여부</h4><p>본인이 아프거나 자리를 비워야 할 때 대체 청소 인력을 구할 의무가 본인에게 있는지, 호스트가 처리하는지도 확인 대상입니다.</p></div></div>
+        </div>
+      
+  </section>
+  <section style="border-bottom:none;">
+    <div class="section-head"><span class="index-no">03</span><h2>실전 꿀팁</h2></div>
+    
+        <div class="tip-list">
+          <div class="tip"><div><h4>일반 전·월세 시세와 비교해보기</h4><p>할인받는 금액이 실제로 이득인지, 주변 시세와 비교해 계산해보세요. 청소 노동 강도에 비해 할인폭이 작다면 손해일 수 있습니다.</p></div></div>
+          <div class="tip"><div><h4>연락 채널을 하나로 정리</h4><p>예약 일정 공유가 잦기 때문에, 카카오톡 등 하나의 채널로 일정을 받기로 미리 정해두면 혼선이 줄어듭니다.</p></div></div>
+        </div>
+      
+  </section>
+
+  <div style="margin-top:32px;">
+    <a href="index.html" style="font-family:'IBM Plex Mono', monospace; font-size:12.5px; color:var(--brass-deep); text-decoration:none; border-bottom:1px dotted var(--brass-deep);">← 전체 근무일지로 돌아가기</a>
+  </div>
+
+  <footer>
+    <span>청소 알바 근무일지 — 정보 제공 목적의 기록 페이지</span>
+    <nav>
+      <a href="guide.html">알바 잘 찾는 법</a>
+      <a href="about.html">사이트 소개</a>
+      <a href="contact.html">문의</a>
+      <a href="privacy.html">개인정보처리방침</a>
+    </nav>
+    <span>마지막 기록 갱신 · 2026</span>
+  </footer>
+
+</div>
+
+</body>
+</html>

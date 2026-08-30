@@ -188,6 +188,21 @@
     border-left:4px solid var(--sage);
     padding:20px 20px 18px;
     position:relative;
+    display:block;
+    text-decoration:none;
+    color:var(--ink);
+    transition:transform .15s ease, box-shadow .15s ease, border-left-color .15s ease;
+  }
+  .ticket:hover{
+    transform:translateY(-2px);
+    box-shadow:0 4px 14px rgba(43,58,58,0.08);
+    border-left-color:var(--brass);
+  }
+  .ticket h3::after{
+    content:" →";
+    color:var(--brass-deep);
+    font-family:'IBM Plex Mono', monospace;
+    font-size:14px;
   }
   .ticket::after{
     content:"";
@@ -338,14 +353,21 @@
 
   .ad-slot{
     margin:8px 0 0;
-    padding:10px;
+    padding:8px;
     border:1px dashed var(--line);
     text-align:center;
     font-family:'IBM Plex Mono', monospace;
     font-size:11px;
     color:var(--ink-soft);
     background:var(--paper-deep);
+    max-height:100px;
+    min-height:60px;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
   }
+  .ad-slot ins{ max-height:84px; }
 
   .faq{
     display:flex;
@@ -375,6 +397,7 @@
   <div class="sitenav">
     <a class="brand" href="index.html">청소 알바 근무일지</a>
     <nav class="links">
+      <a href="guide.html">알바 잘 찾는 법</a>
       <a href="about.html">사이트 소개</a>
       <a href="contact.html">문의</a>
       <a href="privacy.html">개인정보처리방침</a>
@@ -395,7 +418,7 @@
 
   <div class="ad-slot">
     <ins class="adsbygoogle"
-         style="display:block"
+         style="display:block;height:84px;"
          data-ad-client="ca-pub-2557338953436433"
          data-ad-slot="1111111111"
          data-ad-format="auto"
@@ -434,10 +457,10 @@
           <td class="amt">25,000원 / 건</td>
         </tr>
         <tr>
-          <td class="region">서울 마포역 인근</td>
-          <td>2룸 · 화장실 1</td>
-          <td>미표기</td>
-          <td class="amt">45,000원 / 건</td>
+          <td class="region">서울 용산구 이태원동</td>
+          <td>2룸 · 화장실 1 · 주방겸거실</td>
+          <td>1.5~2시간</td>
+          <td class="amt">20,000원 / 건</td>
         </tr>
         <tr>
           <td class="region">서울 강동구 성내동</td>
@@ -458,16 +481,22 @@
           <td class="amt">50,000원 / 건</td>
         </tr>
         <tr>
+          <td class="region">서울 서초구 반포동</td>
+          <td>원룸 (9평)</td>
+          <td>약 1시간</td>
+          <td class="amt">시급 15,000원</td>
+        </tr>
+        <tr>
           <td class="region">부산 부산진구 전포동</td>
           <td>3룸 (가정집형)</td>
           <td>3시간</td>
           <td class="amt">22,000원 / 건</td>
         </tr>
         <tr>
-          <td class="region">전국 (프랜차이즈형 대행업체)</td>
-          <td>2룸</td>
-          <td>미표기</td>
-          <td class="amt">35,000원 / 건</td>
+          <td class="region">충북 청주시 남주동</td>
+          <td>다인실 객실 다수 (에어비앤비·펜션)</td>
+          <td>하루 4~4.5시간</td>
+          <td class="amt">월급 1,100,000원</td>
         </tr>
       </tbody>
     </table>
@@ -482,29 +511,29 @@
       <span class="index-no">02</span>
       <h2>업무 유형별 근무표</h2>
     </div>
-    <p class="section-note">공고마다 표현은 다르지만, 실제 업무는 대체로 아래 네 갈래로 정리됩니다.</p>
+    <p class="section-note">공고마다 표현은 다르지만, 실제 업무는 대체로 아래 네 갈래로 정리됩니다. 카드를 누르면 유형별 상세 준비물과 실전 팁을 볼 수 있습니다.</p>
 
     <div class="tickets">
-      <div class="ticket">
+      <a class="ticket" href="type-basic.html">
         <h3>기본형 · 턴오버 청소</h3>
         <p>체크아웃 직후 침구 교체, 바닥 청소, 화장실 청소, 쓰레기 분리수거까지 한 번에 처리하는 가장 흔한 형태.</p>
         <div class="ticket-foot"><span>2~3시간</span><span>2.5만~4.5만원</span></div>
-      </div>
-      <div class="ticket">
+      </a>
+      <a class="ticket" href="type-laundry.html">
         <h3>세탁 동반형</h3>
         <p>침구·수건 세탁과 건조까지 포함되는 경우로, 숙소 내 세탁기를 쓰거나 인근 빨래방을 이용하며 세탁 실비를 별도 지급받기도 함.</p>
         <div class="ticket-foot"><span>+30분~1시간</span><span>세탁비 별도</span></div>
-      </div>
-      <div class="ticket">
+      </a>
+      <a class="ticket" href="type-amenity.html">
         <h3>비품 보충형</h3>
         <p>어매니티, 화장지, 생필품 리필까지 포함. 구매는 호스트가 미리 해두고 청소자는 보충만 담당하는 경우가 많음.</p>
         <div class="ticket-foot"><span>업무 추가</span><span>단가 동일~약간 상향</span></div>
-      </div>
-      <div class="ticket">
+      </a>
+      <a class="ticket" href="type-livein.html">
         <h3>거주형 (특수 케이스)</h3>
         <p>숙소에 거주하며 상시 청소를 담당하는 형태. 월세 할인 등 조건이 얽혀 있어 일반 알바보다 계약 조건을 꼼꼼히 봐야 함.</p>
         <div class="ticket-foot"><span>주 5회 내외</span><span>월세 연동</span></div>
-      </div>
+      </a>
     </div>
   </section>
 
@@ -573,7 +602,7 @@
 
   <div class="ad-slot">
     <ins class="adsbygoogle"
-         style="display:block"
+         style="display:block;height:84px;"
          data-ad-client="ca-pub-2557338953436433"
          data-ad-slot="2222222222"
          data-ad-format="auto"
@@ -587,7 +616,7 @@
       <span class="index-no">05</span>
       <h2>실제 공고는 여기서</h2>
     </div>
-    <p class="section-note">이 페이지는 기록용 가이드이며 지원 기능을 제공하지 않습니다. 최신 공고 확인과 지원은 아래 플랫폼을 이용하세요.</p>
+    <p class="section-note">이 페이지는 기록용 가이드이며 지원 기능을 제공하지 않습니다. 최신 공고 확인과 지원은 아래 플랫폼을 이용하세요. 검색 요령이 궁금하다면 <a href="guide.html" style="color:var(--brass-deep);">당근·동네알바에서 알바 잘 찾는 법</a>도 참고하세요.</p>
 
     <div class="outbound">
       <a class="out-card" href="https://www.daangn.com/kr/jobs/" target="_blank" rel="noopener noreferrer">
@@ -606,6 +635,7 @@
   <footer>
     <span>청소 알바 근무일지 — 정보 제공 목적의 기록 페이지</span>
     <nav>
+      <a href="guide.html">알바 잘 찾는 법</a>
       <a href="about.html">사이트 소개</a>
       <a href="contact.html">문의</a>
       <a href="privacy.html">개인정보처리방침</a>
