@@ -389,6 +389,51 @@
     font-size:14px;
     color:var(--ink-soft);
   }
+
+  /* 시세표 모바일 카드형 */
+  @media (max-width:640px){
+    .ledger, .ledger tbody, .ledger tr, .ledger td{ display:block; width:100%; }
+    .ledger thead{ display:none; }
+    .ledger{ background:transparent; border:none; }
+    .ledger tr{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-left:4px solid var(--sage);
+      margin-bottom:12px;
+      padding:12px 14px 10px;
+    }
+    .ledger td{
+      border:none;
+      padding:3px 0;
+      font-size:13.5px;
+      display:flex;
+      justify-content:space-between;
+      gap:14px;
+      text-align:right;
+    }
+    .ledger td::before{
+      content:attr(data-label);
+      font-family:'IBM Plex Mono', monospace;
+      font-size:11px;
+      letter-spacing:.06em;
+      color:var(--ink-soft);
+      text-align:left;
+      flex-shrink:0;
+      padding-top:2px;
+    }
+    .ledger td.region{
+      font-family:'Gowun Batang', serif;
+      font-size:16px;
+      justify-content:flex-start;
+      text-align:left;
+      padding-bottom:8px;
+      margin-bottom:6px;
+      border-bottom:1px dotted var(--line);
+    }
+    .ledger td.region::before{ display:none; }
+    .ledger td.amt{ font-size:14.5px; color:var(--brass-deep); padding-top:6px; }
+    .ledger tr:hover{ background:var(--card); }
+  }
 </style>
 </head>
 <body>
@@ -416,15 +461,6 @@
     </div>
   </header>
 
-  <div class="ad-slot">
-    <ins class="adsbygoogle"
-         style="display:block;height:84px;"
-         data-ad-client="ca-pub-2557338953436433"
-         data-ad-slot="1111111111"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-  </div>
 
   <!-- 시세표 -->
   <section id="rates">
@@ -445,58 +481,58 @@
       </thead>
       <tbody>
         <tr>
-          <td class="region">서울 용산구 해방촌</td>
-          <td>3룸 · 화장실 1</td>
-          <td>2.5~3시간</td>
-          <td class="amt">45,000원 / 건</td>
+          <td data-label="지역" class="region">서울 용산구 해방촌</td>
+          <td data-label="숙소 규모">3룸 · 화장실 1</td>
+          <td data-label="소요 시간">2.5~3시간</td>
+          <td data-label="단가" class="amt">45,000원 / 건</td>
         </tr>
         <tr>
-          <td class="region">서울 마포구 공덕동</td>
-          <td>2룸 · 화장실 1 (9평)</td>
-          <td>1.5~2.5시간</td>
-          <td class="amt">25,000원 / 건</td>
+          <td data-label="지역" class="region">서울 마포구 공덕동</td>
+          <td data-label="숙소 규모">2룸 · 화장실 1 (9평)</td>
+          <td data-label="소요 시간">1.5~2.5시간</td>
+          <td data-label="단가" class="amt">25,000원 / 건</td>
         </tr>
         <tr>
-          <td class="region">서울 용산구 이태원동</td>
-          <td>2룸 · 화장실 1 · 주방겸거실</td>
-          <td>1.5~2시간</td>
-          <td class="amt">20,000원 / 건</td>
+          <td data-label="지역" class="region">서울 용산구 이태원동</td>
+          <td data-label="숙소 규모">2룸 · 화장실 1 · 주방겸거실</td>
+          <td data-label="소요 시간">1.5~2시간</td>
+          <td data-label="단가" class="amt">20,000원 / 건</td>
         </tr>
         <tr>
-          <td class="region">서울 강동구 성내동</td>
-          <td>2룸 · 화장실 1</td>
-          <td>약 2시간</td>
-          <td class="amt">20,000원 / 건</td>
+          <td data-label="지역" class="region">서울 강동구 성내동</td>
+          <td data-label="숙소 규모">2룸 · 화장실 1</td>
+          <td data-label="소요 시간">약 2시간</td>
+          <td data-label="단가" class="amt">20,000원 / 건</td>
         </tr>
         <tr>
-          <td class="region">서울 관악구 봉천동</td>
-          <td>단순 청소</td>
-          <td>2시간</td>
-          <td class="amt">시급 20,000원</td>
+          <td data-label="지역" class="region">서울 관악구 봉천동</td>
+          <td data-label="숙소 규모">단순 청소</td>
+          <td data-label="소요 시간">2시간</td>
+          <td data-label="단가" class="amt">시급 20,000원</td>
         </tr>
         <tr>
-          <td class="region">서울 연남동</td>
-          <td>2룸</td>
-          <td>2시간</td>
-          <td class="amt">50,000원 / 건</td>
+          <td data-label="지역" class="region">서울 연남동</td>
+          <td data-label="숙소 규모">2룸</td>
+          <td data-label="소요 시간">2시간</td>
+          <td data-label="단가" class="amt">50,000원 / 건</td>
         </tr>
         <tr>
-          <td class="region">서울 서초구 반포동</td>
-          <td>원룸 (9평)</td>
-          <td>약 1시간</td>
-          <td class="amt">시급 15,000원</td>
+          <td data-label="지역" class="region">서울 서초구 반포동</td>
+          <td data-label="숙소 규모">원룸 (9평)</td>
+          <td data-label="소요 시간">약 1시간</td>
+          <td data-label="단가" class="amt">시급 15,000원</td>
         </tr>
         <tr>
-          <td class="region">부산 부산진구 전포동</td>
-          <td>3룸 (가정집형)</td>
-          <td>3시간</td>
-          <td class="amt">22,000원 / 건</td>
+          <td data-label="지역" class="region">부산 부산진구 전포동</td>
+          <td data-label="숙소 규모">3룸 (가정집형)</td>
+          <td data-label="소요 시간">3시간</td>
+          <td data-label="단가" class="amt">22,000원 / 건</td>
         </tr>
         <tr>
-          <td class="region">충북 청주시 남주동</td>
-          <td>다인실 객실 다수 (에어비앤비·펜션)</td>
-          <td>하루 4~4.5시간</td>
-          <td class="amt">월급 1,100,000원</td>
+          <td data-label="지역" class="region">충북 청주시 남주동</td>
+          <td data-label="숙소 규모">다인실 객실 다수 (에어비앤비·펜션)</td>
+          <td data-label="소요 시간">하루 4~4.5시간</td>
+          <td data-label="단가" class="amt">월급 1,100,000원</td>
         </tr>
       </tbody>
     </table>
@@ -536,6 +572,16 @@
       </a>
     </div>
   </section>
+
+  <div class="ad-slot">
+    <ins class="adsbygoogle"
+         style="display:block;height:84px;"
+         data-ad-client="ca-pub-2557338953436433"
+         data-ad-slot="1111111111"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
 
   <!-- 실전 팁 -->
   <section id="tips">
@@ -609,6 +655,7 @@
          data-full-width-responsive="true"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
+
 
   <!-- 외부 연결 -->
   <section id="apply">
