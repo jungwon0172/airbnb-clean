@@ -1,0 +1,18 @@
+# 청소 알바 근무일지
+
+> 에어비앤비 숙소 청소 알바의 지역별 시세, 업무 유형별 상세, 지원 요령을 실제 공고 기록을 바탕으로 정리한 한국어 정보 사이트입니다. 구인·구직 중개나 지원 접수는 하지 않으며, 수치는 특정 시점 공고 기준의 참고용입니다. 최종 업데이트: 2026-10-24.
+
+## 핵심 페이지
+- [에어비앤비 청소 알바 시세와 개요](https://airbnb-clean.vercel.app/): 지역별 시세표, 업무 유형 요약, FAQ
+- [당근·동네알바에서 청소 알바 잘 찾는 법](https://airbnb-clean.vercel.app/guide.html): 검색 키워드, 알림 설정, 지원·안전 요령
+
+## 업무 유형별 상세
+- [기본형 · 턴오버 청소](https://airbnb-clean.vercel.app/type-basic.html): 세부 업무 순서, 준비물, 팁
+- [세탁 동반형](https://airbnb-clean.vercel.app/type-laundry.html): 세탁·건조 포함 업무, 비용 확인 사항
+- [비품 보충형](https://airbnb-clean.vercel.app/type-amenity.html): 어매니티·생필품 보충 업무
+- [거주형](https://airbnb-clean.vercel.app/type-livein.html): 월세 연동 청소 업무의 계약 확인 사항
+
+## 사이트 정보
+- [사이트 소개](https://airbnb-clean.vercel.app/about.html)
+- [문의](https://airbnb-clean.vercel.app/contact.html): yjw2172@naver.com
+- [개인정보처리방침](https://airbnb-clean.vercel.app/privacy.html)
