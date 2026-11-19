@@ -4,17 +4,32 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="naver-site-verification" content="748d820a300dcdc5c98d3c4fa97f9b291d7386e2" />
+<meta name="last-modified" content="2026-11-19">
 <meta name="robots" content="index, follow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
 <title>개인정보처리방침 — 청소 알바 근무일지</title>
 <meta name="description" content="청소 알바 근무일지 사이트의 개인정보처리방침 및 Google AdSense 광고 쿠키 안내입니다.">
-<link rel="canonical" href="https://your-domain.example/privacy.html">
+<link rel="canonical" href="https://airbnb-clean.vercel.app/privacy.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="개인정보처리방침 — 청소 알바 근무일지">
 <meta property="og:description" content="청소 알바 근무일지 사이트의 개인정보처리방침 및 Google AdSense 광고 쿠키 안내입니다.">
 <meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="청소 알바 근무일지">
+<meta property="og:url" content="https://airbnb-clean.vercel.app/privacy.html">
+<meta property="og:image" content="https://airbnb-clean.vercel.app/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="에어비앤비 청소 알바 시세 가이드 — 청소 알바 근무일지">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="개인정보처리방침 — 청소 알바 근무일지">
+<meta name="twitter:description" content="청소 알바 근무일지 사이트의 개인정보처리방침 및 Google AdSense 광고 쿠키 안내입니다.">
+<meta name="twitter:image" content="https://airbnb-clean.vercel.app/og-image.png">
+<meta name="theme-color" content="#F6F2E9">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <style>
   :root{
     --paper: #F6F2E9;
@@ -83,7 +98,7 @@
   }
   .stamp{
     position:absolute;
-    top:48px; right:24px;
+    bottom:44px; right:24px;
     width:104px; height:104px;
     border:2.5px solid var(--stamp-red);
     border-radius:50%;
@@ -238,7 +253,7 @@
     font-size:15px;
     padding-top:2px;
   }
-  .tip h4{
+  .tip h3{
     margin:0 0 4px;
     font-size:15.5px;
     font-weight:600;
@@ -354,7 +369,7 @@
     padding:16px 0;
   }
   .faq-item:last-child{ border-bottom:none; }
-  .faq-item h4{
+  .faq-item h3{
     margin:0 0 6px;
     font-size:15px;
     font-family:'Gowun Batang', serif;
@@ -364,20 +379,93 @@
     font-size:14px;
     color:var(--ink-soft);
   }
+
+  /* SEO-LAYOUT */
+  .sitenav .left{ display:flex; align-items:baseline; gap:18px; flex-wrap:wrap; }
+  .sitenav .left .sub{ color:var(--ink-soft); text-decoration:none; }
+  .sitenav .left .sub:hover{ color:var(--brass-deep); }
+  .crumbs{ font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--ink-soft); padding:2px 0 0; }
+  .crumbs a{ color:var(--ink-soft); text-decoration:none; border-bottom:1px dotted var(--line); }
+  .crumbs a:hover{ color:var(--brass-deep); }
+  .crumbs span{ margin:0 8px; color:var(--brass); }
+  .related{ margin-top:36px; padding-top:24px; border-top:1px solid var(--line); }
+  .related h2{ font-size:20px; margin:0 0 14px; }
+  .related ul{ list-style:none; margin:0; padding:0; display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+  .related a{ display:block; padding:12px 14px; background:var(--card); border:1px solid var(--line);
+    border-left:3px solid var(--sage); color:var(--ink); text-decoration:none; font-size:14px; }
+  .related a:hover{ border-left-color:var(--brass); }
+  @media (max-width:640px){ .related ul{ grid-template-columns:1fr; } }
+  .sitenav{ align-items:flex-start; gap:14px; }
+  .sitenav .links{ white-space:nowrap; flex-shrink:0; }
+  .sitenav .links a{ white-space:nowrap; }
+  @media (max-width:480px){ .sitenav .links a{ margin-left:12px; } .sitenav .left{ gap:4px 14px; } }
+  /* /SEO-LAYOUT */
 </style>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://airbnb-clean.vercel.app/#org",
+      "name": "청소 알바 근무일지",
+      "url": "https://airbnb-clean.vercel.app/",
+      "email": "yjw2172@naver.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://airbnb-clean.vercel.app/apple-touch-icon.png"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://airbnb-clean.vercel.app/privacy.html#page",
+      "url": "https://airbnb-clean.vercel.app/privacy.html",
+      "name": "개인정보처리방침 — 청소 알바 근무일지",
+      "description": "청소 알바 근무일지 사이트의 개인정보처리방침 및 Google AdSense 광고 쿠키 안내입니다.",
+      "inLanguage": "ko-KR",
+      "dateModified": "2026-11-19",
+      "isPartOf": {
+        "@id": "https://airbnb-clean.vercel.app/#website"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "홈",
+          "item": "https://airbnb-clean.vercel.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "개인정보처리방침",
+          "item": "https://airbnb-clean.vercel.app/privacy.html"
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
 <div class="wrap">
   <div class="sitenav">
-    <a class="brand" href="index.html">청소 알바 근무일지</a>
-    <nav class="links">
+    <div class="left">
+      <a class="brand" href="/">청소 알바 근무일지</a>
+      <a class="sub" href="guide.html">알바 잘 찾는 법</a>
+    </div>
+    <nav class="links" aria-label="사이트 메뉴">
       <a href="about.html">사이트 소개</a>
       <a href="contact.html">문의</a>
-      <a href="privacy.html">개인정보처리방침</a>
     </nav>
   </div>
+  <nav class="crumbs" aria-label="현재 위치"><a href="/">홈</a><span>›</span>개인정보처리방침</nav>
+
+  <main>
 
   <header class="hero" style="border-bottom:2px solid var(--ink); padding:40px 0 32px;">
     <div class="eyebrow">정책 문서</div>
@@ -394,9 +482,9 @@
     <div class="section-head"><span class="index-no">02</span><h2>쿠키 및 광고(Google AdSense)</h2></div>
     <p class="section-note" style="max-width:680px;">본 사이트는 Google AdSense를 통해 광고를 게재합니다. Google 및 제3자 공급업체는 쿠키를 사용하여 사용자의 과거 사이트 방문 기록을 바탕으로 광고를 게재할 수 있습니다.</p>
     <div class="tip-list">
-      <div class="tip"><div><h4>Google 광고 쿠키 사용</h4><p>Google은 광고 쿠키를 사용하여 사용자가 본 사이트 및 인터넷 상의 다른 사이트를 방문한 기록을 기반으로 광고를 게재합니다.</p></div></div>
-      <div class="tip"><div><h4>맞춤 광고 해제</h4><p>사용자는 <a href="https://adssettings.google.com/" target="_blank" rel="noopener noreferrer">Google 광고 설정 페이지</a>에서 맞춤 광고를 해제할 수 있습니다.</p></div></div>
-      <div class="tip"><div><h4>제3자 쿠키 관련 추가 정보</h4><p>맞춤 광고를 위해 제3자 공급업체나 광고 네트워크가 사용하는 쿠키에 대한 자세한 내용은 <a href="https://www.aboutads.info/" target="_blank" rel="noopener noreferrer">www.aboutads.info</a>에서 확인할 수 있습니다.</p></div></div>
+      <div class="tip"><div><h3>Google 광고 쿠키 사용</h3><p>Google은 광고 쿠키를 사용하여 사용자가 본 사이트 및 인터넷 상의 다른 사이트를 방문한 기록을 기반으로 광고를 게재합니다.</p></div></div>
+      <div class="tip"><div><h3>맞춤 광고 해제</h3><p>사용자는 <a href="https://adssettings.google.com/" target="_blank" rel="noopener noreferrer">Google 광고 설정 페이지</a>에서 맞춤 광고를 해제할 수 있습니다.</p></div></div>
+      <div class="tip"><div><h3>제3자 쿠키 관련 추가 정보</h3><p>맞춤 광고를 위해 제3자 공급업체나 광고 네트워크가 사용하는 쿠키에 대한 자세한 내용은 <a href="https://www.aboutads.info/" target="_blank" rel="noopener noreferrer">www.aboutads.info</a>에서 확인할 수 있습니다.</p></div></div>
     </div>
   </section>
 
@@ -415,9 +503,12 @@
     <p class="section-note" style="max-width:680px;">본 방침은 법령 또는 서비스 변경에 따라 수정될 수 있으며, 변경 시 본 페이지를 통해 고지합니다. 문의 사항은 <a href="contact.html">문의 페이지</a>를 이용해 주세요.</p>
   </section>
 
+  </main>
+
   <footer>
     <span>청소 알바 근무일지 — 정보 제공 목적의 기록 페이지</span>
     <nav>
+      <a href="guide.html">알바 잘 찾는 법</a>
       <a href="about.html">사이트 소개</a>
       <a href="contact.html">문의</a>
       <a href="privacy.html">개인정보처리방침</a>

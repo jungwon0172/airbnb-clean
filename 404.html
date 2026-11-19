@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="naver-site-verification" content="748d820a300dcdc5c98d3c4fa97f9b291d7386e2" />
+<meta name="last-modified" content="2026-11-19">
+<meta name="robots" content="noindex, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>페이지를 찾을 수 없습니다 — 청소 알바 근무일지</title>
+<meta name="description" content="요청하신 페이지를 찾을 수 없습니다.">
+<meta name="theme-color" content="#F6F2E9">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<style>
+  :root{
+    --paper: #F6F2E9;
+    --paper-deep: #EFE8D8;
+    --ink: #2B3A3A;
+    --ink-soft: #4C5F5C;
+    --brass: #B08A2E;
+    --brass-deep: #8C6C1F;
+    --sage: #7C8F82;
+    --stamp-red: #A8422F;
+    --line: #D8CFB8;
+    --card: #FFFDF7;
+  }
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Noto Sans KR', sans-serif;
+    line-height:1.6;
+    background-image:
+      repeating-linear-gradient(0deg, transparent, transparent 34px, rgba(43,58,58,0.035) 35px);
+  }
+  .mono{ font-family:'IBM Plex Mono', monospace; }
+  .serif{ font-family:'Gowun Batang', serif; }
+
+  .wrap{ max-width:920px; margin:0 auto; padding:0 24px; }
+
+  /* HEADER */
+  header.hero{
+    border-bottom:2px solid var(--ink);
+    padding:56px 0 40px;
+    position:relative;
+  }
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12.5px;
+    letter-spacing:.14em;
+    color:var(--brass-deep);
+    text-transform:uppercase;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:18px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:8px;height:8px;
+    background:var(--stamp-red);
+    border-radius:50%;
+    display:inline-block;
+  }
+  h1{
+    font-family:'Gowun Batang', serif;
+    font-size:clamp(32px, 5vw, 50px);
+    line-height:1.25;
+    margin:0 0 18px;
+    font-weight:700;
+  }
+  .hero-sub{
+    max-width:560px;
+    color:var(--ink-soft);
+    font-size:16px;
+    margin-bottom:28px;
+  }
+  .stamp{
+    position:absolute;
+    bottom:44px; right:24px;
+    width:104px; height:104px;
+    border:2.5px solid var(--stamp-red);
+    border-radius:50%;
+    color:var(--stamp-red);
+    display:flex; align-items:center; justify-content:center;
+    text-align:center;
+    transform:rotate(-11deg);
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    font-weight:600;
+    letter-spacing:.06em;
+    line-height:1.35;
+    opacity:.82;
+  }
+  @media (max-width:640px){ .stamp{ display:none; } }
+
+  .meta-row{
+    display:flex; flex-wrap:wrap; gap:10px;
+  }
+  .tag{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    border:1px solid var(--line);
+    background:var(--card);
+    padding:6px 12px;
+    border-radius:2px;
+    color:var(--ink-soft);
+  }
+
+  section{ padding:52px 0; border-bottom:1px solid var(--line); }
+  section:last-of-type{ border-bottom:none; }
+
+  .section-head{
+    display:flex;
+    align-items:baseline;
+    gap:14px;
+    margin-bottom:8px;
+  }
+  .index-no{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:13px;
+    color:var(--brass-deep);
+    border:1px solid var(--brass-deep);
+    padding:2px 8px;
+  }
+  h2{
+    font-family:'Gowun Batang', serif;
+    font-size:26px;
+    margin:0;
+  }
+  .section-note{
+    color:var(--ink-soft);
+    font-size:14.5px;
+    margin:10px 0 28px;
+    max-width:640px;
+  }
+
+  /* RATE LEDGER TABLE */
+  .ledger{
+    width:100%;
+    border-collapse:collapse;
+    background:var(--card);
+    border:1px solid var(--line);
+  }
+  .ledger th, .ledger td{
+    padding:14px 16px;
+    text-align:left;
+    border-bottom:1px solid var(--line);
+    font-size:14.5px;
+  }
+  .ledger th{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11.5px;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    background:var(--paper-deep);
+  }
+  .ledger tr:last-child td{ border-bottom:none; }
+  .ledger td.amt{
+    font-family:'IBM Plex Mono', monospace;
+    font-weight:600;
+    color:var(--brass-deep);
+    white-space:nowrap;
+  }
+  .ledger td.region{ font-weight:600; }
+  .ledger tr:hover{ background:#FBF7EC; }
+
+  /* JOB TICKET CARDS */
+  .tickets{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+  }
+  @media (max-width:640px){ .tickets{ grid-template-columns:1fr; } }
+  .ticket{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-left:4px solid var(--sage);
+    padding:20px 20px 18px;
+    position:relative;
+  }
+  .ticket::after{
+    content:"";
+    position:absolute;
+    left:-1px; bottom:-1px;
+    width:calc(100% + 2px);
+    height:0;
+    border-bottom:1.5px dashed var(--line);
+  }
+  .ticket h3{
+    font-family:'Gowun Batang', serif;
+    font-size:18px;
+    margin:0 0 8px;
+  }
+  .ticket p{
+    font-size:13.8px;
+    color:var(--ink-soft);
+    margin:0 0 12px;
+  }
+  .ticket-foot{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12.5px;
+    color:var(--brass-deep);
+    border-top:1px dotted var(--line);
+    padding-top:10px;
+  }
+
+  /* TIPS */
+  .tip-list{
+    counter-reset:tip;
+    display:flex;
+    flex-direction:column;
+    gap:0;
+  }
+  .tip{
+    counter-increment:tip;
+    display:grid;
+    grid-template-columns:44px 1fr;
+    gap:16px;
+    padding:18px 0;
+    border-bottom:1px solid var(--line);
+  }
+  .tip:last-child{ border-bottom:none; }
+  .tip::before{
+    content:counter(tip, decimal-leading-zero);
+    font-family:'IBM Plex Mono', monospace;
+    color:var(--brass);
+    font-size:15px;
+    padding-top:2px;
+  }
+  .tip h3{
+    margin:0 0 4px;
+    font-size:15.5px;
+    font-weight:600;
+  }
+  .tip p{
+    margin:0;
+    font-size:14px;
+    color:var(--ink-soft);
+  }
+
+  /* OUTBOUND */
+  .outbound{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:16px;
+  }
+  @media (max-width:640px){ .outbound{ grid-template-columns:1fr; } }
+  .out-card{
+    display:block;
+    background:var(--ink);
+    color:var(--paper);
+    text-decoration:none;
+    padding:22px 22px;
+    border-radius:2px;
+    transition:transform .15s ease, background .15s ease;
+  }
+  .out-card:hover{ transform:translateY(-2px); background:#243230; }
+  .out-card .name{
+    font-family:'Gowun Batang', serif;
+    font-size:19px;
+    margin-bottom:6px;
+  }
+  .out-card .desc{
+    font-size:13px;
+    color:#C9D6D1;
+  }
+  .out-card .arrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    color:var(--brass);
+    margin-top:14px;
+    display:inline-block;
+  }
+
+  .disclaimer{
+    background:var(--paper-deep);
+    border:1px solid var(--line);
+    padding:18px 20px;
+    font-size:13px;
+    color:var(--ink-soft);
+    margin-top:24px;
+  }
+  .disclaimer strong{ color:var(--ink); }
+
+  footer{
+    padding:36px 0 60px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12px;
+    color:var(--ink-soft);
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:10px;
+  }
+  footer nav a{
+    color:var(--ink-soft);
+    margin-left:14px;
+    text-decoration:none;
+    border-bottom:1px dotted var(--line);
+  }
+  footer nav a:first-child{ margin-left:0; }
+  footer nav a:hover{ color:var(--brass-deep); }
+
+  .sitenav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:16px 0;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:12.5px;
+  }
+  .sitenav .brand{
+    color:var(--ink);
+    text-decoration:none;
+    font-weight:600;
+    letter-spacing:.02em;
+  }
+  .sitenav .links a{
+    color:var(--ink-soft);
+    text-decoration:none;
+    margin-left:18px;
+  }
+  .sitenav .links a:hover{ color:var(--brass-deep); }
+
+  .ad-slot{
+    margin:8px 0 0;
+    padding:10px;
+    border:1px dashed var(--line);
+    text-align:center;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    color:var(--ink-soft);
+    background:var(--paper-deep);
+  }
+
+  .faq{
+    display:flex;
+    flex-direction:column;
+    gap:0;
+  }
+  .faq-item{
+    border-bottom:1px solid var(--line);
+    padding:16px 0;
+  }
+  .faq-item:last-child{ border-bottom:none; }
+  .faq-item h3{
+    margin:0 0 6px;
+    font-size:15px;
+    font-family:'Gowun Batang', serif;
+  }
+  .faq-item p{
+    margin:0;
+    font-size:14px;
+    color:var(--ink-soft);
+  }
+
+  /* SEO-LAYOUT */
+  .sitenav .left{ display:flex; align-items:baseline; gap:18px; flex-wrap:wrap; }
+  .sitenav .left .sub{ color:var(--ink-soft); text-decoration:none; }
+  .sitenav .left .sub:hover{ color:var(--brass-deep); }
+  .crumbs{ font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--ink-soft); padding:2px 0 0; }
+  .crumbs a{ color:var(--ink-soft); text-decoration:none; border-bottom:1px dotted var(--line); }
+  .crumbs a:hover{ color:var(--brass-deep); }
+  .crumbs span{ margin:0 8px; color:var(--brass); }
+  .related{ margin-top:36px; padding-top:24px; border-top:1px solid var(--line); }
+  .related h2{ font-size:20px; margin:0 0 14px; }
+  .related ul{ list-style:none; margin:0; padding:0; display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+  .related a{ display:block; padding:12px 14px; background:var(--card); border:1px solid var(--line);
+    border-left:3px solid var(--sage); color:var(--ink); text-decoration:none; font-size:14px; }
+  .related a:hover{ border-left-color:var(--brass); }
+  @media (max-width:640px){ .related ul{ grid-template-columns:1fr; } }
+  .sitenav{ align-items:flex-start; gap:14px; }
+  .sitenav .links{ white-space:nowrap; flex-shrink:0; }
+  .sitenav .links a{ white-space:nowrap; }
+  @media (max-width:480px){ .sitenav .links a{ margin-left:12px; } .sitenav .left{ gap:4px 14px; } }
+  /* /SEO-LAYOUT */
+</style>
+
+</head>
+<body>
+
+<div class="wrap">
+  <div class="sitenav">
+    <div class="left">
+      <a class="brand" href="/">청소 알바 근무일지</a>
+      <a class="sub" href="/guide.html">알바 잘 찾는 법</a>
+    </div>
+    <nav class="links" aria-label="사이트 메뉴">
+      <a href="/about.html">사이트 소개</a>
+      <a href="/contact.html">문의</a>
+    </nav>
+  </div>
+  
+  <main>
+    <header class="hero" style="border-bottom:2px solid var(--ink); padding:40px 0 32px;">
+      <div class="eyebrow">404 · NOT FOUND</div>
+      <h1 style="font-size:clamp(28px,4vw,40px);">찾으시는 페이지가 없습니다</h1>
+      <p class="hero-sub">주소가 바뀌었거나 삭제된 페이지입니다. 아래 링크에서 필요한 내용을 찾아보세요.</p>
+    </header>
+    <div class="related">
+      <h2>이동하기</h2>
+      <ul>
+        <li><a href="/">에어비앤비 청소 알바 시세 총정리</a></li>
+        <li><a href="/guide.html">당근·동네알바에서 청소 알바 잘 찾는 법</a></li>
+        <li><a href="/type-basic.html">기본형 · 턴오버 청소</a></li>
+        <li><a href="/type-laundry.html">세탁 동반형</a></li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    <span>청소 알바 근무일지 — 정보 제공 목적의 기록 페이지</span>
+    <nav>
+      <a href="/guide.html">알바 잘 찾는 법</a>
+      <a href="/about.html">사이트 소개</a>
+      <a href="/contact.html">문의</a>
+      <a href="/privacy.html">개인정보처리방침</a>
+    </nav>
+    <span>마지막 기록 갱신 · 2026</span>
+  </footer>
+
+</div>
+
+</body>
+</html>

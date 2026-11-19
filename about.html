@@ -4,17 +4,32 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="naver-site-verification" content="748d820a300dcdc5c98d3c4fa97f9b291d7386e2" />
+<meta name="last-modified" content="2026-11-19">
 <meta name="robots" content="index, follow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
 <title>사이트 소개 — 청소 알바 근무일지</title>
 <meta name="description" content="청소 알바 근무일지 사이트의 운영 목적과 콘텐츠 기준을 소개합니다.">
-<link rel="canonical" href="https://your-domain.example/about.html">
+<link rel="canonical" href="https://airbnb-clean.vercel.app/about.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="사이트 소개 — 청소 알바 근무일지">
 <meta property="og:description" content="청소 알바 근무일지 사이트의 운영 목적과 콘텐츠 기준을 소개합니다.">
 <meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="청소 알바 근무일지">
+<meta property="og:url" content="https://airbnb-clean.vercel.app/about.html">
+<meta property="og:image" content="https://airbnb-clean.vercel.app/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="에어비앤비 청소 알바 시세 가이드 — 청소 알바 근무일지">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="사이트 소개 — 청소 알바 근무일지">
+<meta name="twitter:description" content="청소 알바 근무일지 사이트의 운영 목적과 콘텐츠 기준을 소개합니다.">
+<meta name="twitter:image" content="https://airbnb-clean.vercel.app/og-image.png">
+<meta name="theme-color" content="#F6F2E9">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <style>
   :root{
     --paper: #F6F2E9;
@@ -83,7 +98,7 @@
   }
   .stamp{
     position:absolute;
-    top:48px; right:24px;
+    bottom:44px; right:24px;
     width:104px; height:104px;
     border:2.5px solid var(--stamp-red);
     border-radius:50%;
@@ -238,7 +253,7 @@
     font-size:15px;
     padding-top:2px;
   }
-  .tip h4{
+  .tip h3{
     margin:0 0 4px;
     font-size:15.5px;
     font-weight:600;
@@ -354,7 +369,7 @@
     padding:16px 0;
   }
   .faq-item:last-child{ border-bottom:none; }
-  .faq-item h4{
+  .faq-item h3{
     margin:0 0 6px;
     font-size:15px;
     font-family:'Gowun Batang', serif;
@@ -364,20 +379,93 @@
     font-size:14px;
     color:var(--ink-soft);
   }
+
+  /* SEO-LAYOUT */
+  .sitenav .left{ display:flex; align-items:baseline; gap:18px; flex-wrap:wrap; }
+  .sitenav .left .sub{ color:var(--ink-soft); text-decoration:none; }
+  .sitenav .left .sub:hover{ color:var(--brass-deep); }
+  .crumbs{ font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--ink-soft); padding:2px 0 0; }
+  .crumbs a{ color:var(--ink-soft); text-decoration:none; border-bottom:1px dotted var(--line); }
+  .crumbs a:hover{ color:var(--brass-deep); }
+  .crumbs span{ margin:0 8px; color:var(--brass); }
+  .related{ margin-top:36px; padding-top:24px; border-top:1px solid var(--line); }
+  .related h2{ font-size:20px; margin:0 0 14px; }
+  .related ul{ list-style:none; margin:0; padding:0; display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+  .related a{ display:block; padding:12px 14px; background:var(--card); border:1px solid var(--line);
+    border-left:3px solid var(--sage); color:var(--ink); text-decoration:none; font-size:14px; }
+  .related a:hover{ border-left-color:var(--brass); }
+  @media (max-width:640px){ .related ul{ grid-template-columns:1fr; } }
+  .sitenav{ align-items:flex-start; gap:14px; }
+  .sitenav .links{ white-space:nowrap; flex-shrink:0; }
+  .sitenav .links a{ white-space:nowrap; }
+  @media (max-width:480px){ .sitenav .links a{ margin-left:12px; } .sitenav .left{ gap:4px 14px; } }
+  /* /SEO-LAYOUT */
 </style>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://airbnb-clean.vercel.app/#org",
+      "name": "청소 알바 근무일지",
+      "url": "https://airbnb-clean.vercel.app/",
+      "email": "yjw2172@naver.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://airbnb-clean.vercel.app/apple-touch-icon.png"
+      }
+    },
+    {
+      "@type": "AboutPage",
+      "@id": "https://airbnb-clean.vercel.app/about.html#page",
+      "url": "https://airbnb-clean.vercel.app/about.html",
+      "name": "사이트 소개 — 청소 알바 근무일지",
+      "description": "청소 알바 근무일지 사이트의 운영 목적과 콘텐츠 기준을 소개합니다.",
+      "inLanguage": "ko-KR",
+      "dateModified": "2026-11-19",
+      "isPartOf": {
+        "@id": "https://airbnb-clean.vercel.app/#website"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "홈",
+          "item": "https://airbnb-clean.vercel.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "이 사이트는 어떤 곳인가요",
+          "item": "https://airbnb-clean.vercel.app/about.html"
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
 <div class="wrap">
   <div class="sitenav">
-    <a class="brand" href="index.html">청소 알바 근무일지</a>
-    <nav class="links">
+    <div class="left">
+      <a class="brand" href="/">청소 알바 근무일지</a>
+      <a class="sub" href="guide.html">알바 잘 찾는 법</a>
+    </div>
+    <nav class="links" aria-label="사이트 메뉴">
       <a href="about.html">사이트 소개</a>
       <a href="contact.html">문의</a>
-      <a href="privacy.html">개인정보처리방침</a>
     </nav>
   </div>
+  <nav class="crumbs" aria-label="현재 위치"><a href="/">홈</a><span>›</span>사이트 소개</nav>
+
+  <main>
 
   <header class="hero" style="border-bottom:2px solid var(--ink); padding:40px 0 32px;">
     <div class="eyebrow">사이트 소개</div>
@@ -393,9 +481,9 @@
   <section>
     <div class="section-head"><span class="index-no">02</span><h2>운영하지 않는 것</h2></div>
     <div class="tip-list">
-      <div class="tip"><div><h4>구인·구직 중개</h4><p>이 사이트는 공고 등록, 지원, 매칭 기능을 제공하지 않습니다. 실제 지원은 안내된 외부 플랫폼에서 이루어집니다.</p></div></div>
-      <div class="tip"><div><h4>실시간 공고 게시</h4><p>표시되는 시세 정보는 특정 시점에 게시됐던 공고를 근거로 한 기록이며, 실시간으로 갱신되지 않습니다.</p></div></div>
-      <div class="tip"><div><h4>수수료·중개료 수취</h4><p>알바 매칭이나 계약과 관련해 어떠한 수수료도 받지 않습니다.</p></div></div>
+      <div class="tip"><div><h3>구인·구직 중개</h3><p>이 사이트는 공고 등록, 지원, 매칭 기능을 제공하지 않습니다. 실제 지원은 안내된 외부 플랫폼에서 이루어집니다.</p></div></div>
+      <div class="tip"><div><h3>실시간 공고 게시</h3><p>표시되는 시세 정보는 특정 시점에 게시됐던 공고를 근거로 한 기록이며, 실시간으로 갱신되지 않습니다.</p></div></div>
+      <div class="tip"><div><h3>수수료·중개료 수취</h3><p>알바 매칭이나 계약과 관련해 어떠한 수수료도 받지 않습니다.</p></div></div>
     </div>
   </section>
 
@@ -404,9 +492,12 @@
     <p class="section-note" style="max-width:680px;">모든 시세 정보는 공개된 지역 알바 게시판의 공고를 참고해 사실관계만 재구성하며, 원문을 그대로 옮기지 않습니다. 정보는 참고용이며, 실제 계약 조건은 반드시 최신 공고와 당사자 간 확인을 거쳐야 합니다.</p>
   </section>
 
+  </main>
+
   <footer>
     <span>청소 알바 근무일지 — 정보 제공 목적의 기록 페이지</span>
     <nav>
+      <a href="guide.html">알바 잘 찾는 법</a>
       <a href="about.html">사이트 소개</a>
       <a href="contact.html">문의</a>
       <a href="privacy.html">개인정보처리방침</a>

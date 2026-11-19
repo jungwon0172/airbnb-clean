@@ -4,17 +4,32 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="naver-site-verification" content="748d820a300dcdc5c98d3c4fa97f9b291d7386e2" />
+<meta name="last-modified" content="2026-11-19">
 <meta name="robots" content="index, follow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
-<title>세탁 동반형 청소 상세 가이드 — 청소 알바 근무일지</title>
-<meta name="description" content="세탁·건조가 포함된 에어비앤비 청소 알바의 업무 순서와 준비물, 팁을 정리했습니다.">
-<link rel="canonical" href="https://your-domain.example/type-laundry.html">
+<title>에어비앤비 청소 알바 세탁 동반형 가이드 | 청소 알바 근무일지</title>
+<meta name="description" content="침구·수건 세탁과 건조가 포함된 에어비앤비 청소 알바의 업무 순서, 준비물, 세탁비·이동 시간 확인 요령을 정리했습니다.">
+<link rel="canonical" href="https://airbnb-clean.vercel.app/type-laundry.html">
 <meta property="og:type" content="website">
-<meta property="og:title" content="세탁 동반형 청소 상세 가이드 — 청소 알바 근무일지">
-<meta property="og:description" content="세탁·건조가 포함된 에어비앤비 청소 알바의 업무 순서와 준비물, 팁을 정리했습니다.">
+<meta property="og:title" content="에어비앤비 청소 알바 세탁 동반형 가이드 | 청소 알바 근무일지">
+<meta property="og:description" content="침구·수건 세탁과 건조가 포함된 에어비앤비 청소 알바의 업무 순서, 준비물, 세탁비·이동 시간 확인 요령을 정리했습니다.">
 <meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="청소 알바 근무일지">
+<meta property="og:url" content="https://airbnb-clean.vercel.app/type-laundry.html">
+<meta property="og:image" content="https://airbnb-clean.vercel.app/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="에어비앤비 청소 알바 시세 가이드 — 청소 알바 근무일지">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="에어비앤비 청소 알바 세탁 동반형 가이드 | 청소 알바 근무일지">
+<meta name="twitter:description" content="침구·수건 세탁과 건조가 포함된 에어비앤비 청소 알바의 업무 순서, 준비물, 세탁비·이동 시간 확인 요령을 정리했습니다.">
+<meta name="twitter:image" content="https://airbnb-clean.vercel.app/og-image.png">
+<meta name="theme-color" content="#F6F2E9">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <style>
   :root{
     --paper: #F6F2E9;
@@ -83,7 +98,7 @@
   }
   .stamp{
     position:absolute;
-    top:48px; right:24px;
+    bottom:44px; right:24px;
     width:104px; height:104px;
     border:2.5px solid var(--stamp-red);
     border-radius:50%;
@@ -253,7 +268,7 @@
     font-size:15px;
     padding-top:2px;
   }
-  .tip h4{
+  .tip h3{
     margin:0 0 4px;
     font-size:15.5px;
     font-weight:600;
@@ -376,7 +391,7 @@
     padding:16px 0;
   }
   .faq-item:last-child{ border-bottom:none; }
-  .faq-item h4{
+  .faq-item h3{
     margin:0 0 6px;
     font-size:15px;
     font-family:'Gowun Batang', serif;
@@ -386,21 +401,99 @@
     font-size:14px;
     color:var(--ink-soft);
   }
+
+  /* SEO-LAYOUT */
+  .sitenav .left{ display:flex; align-items:baseline; gap:18px; flex-wrap:wrap; }
+  .sitenav .left .sub{ color:var(--ink-soft); text-decoration:none; }
+  .sitenav .left .sub:hover{ color:var(--brass-deep); }
+  .crumbs{ font-family:'IBM Plex Mono', monospace; font-size:12px; color:var(--ink-soft); padding:2px 0 0; }
+  .crumbs a{ color:var(--ink-soft); text-decoration:none; border-bottom:1px dotted var(--line); }
+  .crumbs a:hover{ color:var(--brass-deep); }
+  .crumbs span{ margin:0 8px; color:var(--brass); }
+  .related{ margin-top:36px; padding-top:24px; border-top:1px solid var(--line); }
+  .related h2{ font-size:20px; margin:0 0 14px; }
+  .related ul{ list-style:none; margin:0; padding:0; display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+  .related a{ display:block; padding:12px 14px; background:var(--card); border:1px solid var(--line);
+    border-left:3px solid var(--sage); color:var(--ink); text-decoration:none; font-size:14px; }
+  .related a:hover{ border-left-color:var(--brass); }
+  @media (max-width:640px){ .related ul{ grid-template-columns:1fr; } }
+  .sitenav{ align-items:flex-start; gap:14px; }
+  .sitenav .links{ white-space:nowrap; flex-shrink:0; }
+  .sitenav .links a{ white-space:nowrap; }
+  @media (max-width:480px){ .sitenav .links a{ margin-left:12px; } .sitenav .left{ gap:4px 14px; } }
+  /* /SEO-LAYOUT */
 </style>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://airbnb-clean.vercel.app/#org",
+      "name": "청소 알바 근무일지",
+      "url": "https://airbnb-clean.vercel.app/",
+      "email": "yjw2172@naver.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://airbnb-clean.vercel.app/apple-touch-icon.png"
+      }
+    },
+    {
+      "@type": "Article",
+      "@id": "https://airbnb-clean.vercel.app/type-laundry.html#article",
+      "headline": "세탁 동반형",
+      "description": "침구·수건 세탁과 건조가 포함된 에어비앤비 청소 알바의 업무 순서, 준비물, 세탁비·이동 시간 확인 요령을 정리했습니다.",
+      "inLanguage": "ko-KR",
+      "dateModified": "2026-11-19",
+      "mainEntityOfPage": "https://airbnb-clean.vercel.app/type-laundry.html",
+      "author": {
+        "@id": "https://airbnb-clean.vercel.app/#org"
+      },
+      "publisher": {
+        "@id": "https://airbnb-clean.vercel.app/#org"
+      },
+      "image": [
+        "https://airbnb-clean.vercel.app/og-image.png"
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "홈",
+          "item": "https://airbnb-clean.vercel.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "세탁 동반형",
+          "item": "https://airbnb-clean.vercel.app/type-laundry.html"
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
 <div class="wrap">
   <div class="sitenav">
-    <a class="brand" href="index.html">청소 알바 근무일지</a>
-    <nav class="links">
-      <a href="guide.html">알바 잘 찾는 법</a>
+    <div class="left">
+      <a class="brand" href="/">청소 알바 근무일지</a>
+      <a class="sub" href="guide.html">알바 잘 찾는 법</a>
+    </div>
+    <nav class="links" aria-label="사이트 메뉴">
       <a href="about.html">사이트 소개</a>
       <a href="contact.html">문의</a>
-      <a href="privacy.html">개인정보처리방침</a>
     </nav>
   </div>
+  <nav class="crumbs" aria-label="현재 위치"><a href="/">홈</a><span>›</span>세탁 동반형</nav>
+
+  <main>
 
   <header class="hero" style="border-bottom:2px solid var(--ink); padding:40px 0 32px;">
     <div class="eyebrow">업무 유형 상세 · 02</div>
@@ -417,9 +510,9 @@
     <div class="section-head"><span class="index-no">01</span><h2>세부 업무 순서</h2></div>
     
         <div class="tip-list">
-          <div class="tip"><div><h4>1. 세탁물 먼저 분리해 돌리기</h4><p>도착하자마자 침구·수건을 벗겨 세탁기부터 돌려두고, 세탁이 진행되는 동안 나머지 청소(화장실, 주방, 바닥)를 병행하는 것이 시간을 가장 아끼는 방법입니다.</p></div></div>
-          <div class="tip"><div><h4>2. 건조 방식 확인</h4><p>숙소 내 건조기가 있으면 바로 건조하고, 없으면 인근 빨래방까지 이동해 건조해야 합니다. 이 이동 시간까지 포함해서 근무 시간을 계산해야 실제 시급이 맞는지 판단할 수 있습니다.</p></div></div>
-          <div class="tip"><div><h4>3. 마른 세탁물 정리</h4><p>침대 시트와 베개커버를 다시 씌우고, 수건은 정해진 개수만큼 개어 비치합니다. 숙소마다 수건 접는 방식(호텔식 롤 등)을 요구하는 경우가 있어 첫 근무 시 확인이 필요합니다.</p></div></div>
+          <div class="tip"><div><h3>1. 세탁물 먼저 분리해 돌리기</h3><p>도착하자마자 침구·수건을 벗겨 세탁기부터 돌려두고, 세탁이 진행되는 동안 나머지 청소(화장실, 주방, 바닥)를 병행하는 것이 시간을 가장 아끼는 방법입니다.</p></div></div>
+          <div class="tip"><div><h3>2. 건조 방식 확인</h3><p>숙소 내 건조기가 있으면 바로 건조하고, 없으면 인근 빨래방까지 이동해 건조해야 합니다. 이 이동 시간까지 포함해서 근무 시간을 계산해야 실제 시급이 맞는지 판단할 수 있습니다.</p></div></div>
+          <div class="tip"><div><h3>3. 마른 세탁물 정리</h3><p>침대 시트와 베개커버를 다시 씌우고, 수건은 정해진 개수만큼 개어 비치합니다. 숙소마다 수건 접는 방식(호텔식 롤 등)을 요구하는 경우가 있어 첫 근무 시 확인이 필요합니다.</p></div></div>
         </div>
       
   </section>
@@ -427,8 +520,8 @@
     <div class="section-head"><span class="index-no">02</span><h2>준비물</h2></div>
     
         <div class="tip-list">
-          <div class="tip"><div><h4>세탁 관련</h4><p>세탁 전용 망(속옷·수건 분리용으로 챙기면 좋음), 섬유유연제(숙소에 없을 경우 대비), 동전(빨래방 이용 시 필요할 수 있음)</p></div></div>
-          <div class="tip"><div><h4>이동 시</h4><p>세탁물을 옮길 큰 가방이나 대형 비닐, 빨래방 위치를 미리 지도 앱으로 확인</p></div></div>
+          <div class="tip"><div><h3>세탁 관련</h3><p>세탁 전용 망(속옷·수건 분리용으로 챙기면 좋음), 섬유유연제(숙소에 없을 경우 대비), 동전(빨래방 이용 시 필요할 수 있음)</p></div></div>
+          <div class="tip"><div><h3>이동 시</h3><p>세탁물을 옮길 큰 가방이나 대형 비닐, 빨래방 위치를 미리 지도 앱으로 확인</p></div></div>
         </div>
       
   </section>
@@ -436,16 +529,31 @@
     <div class="section-head"><span class="index-no">03</span><h2>실전 꿀팁</h2></div>
     
         <div class="tip-list">
-          <div class="tip"><div><h4>세탁비가 단가에 포함인지 반드시 확인</h4><p>빨래방 이용료가 본인 부담인지, 별도 지급인지 계약 전에 명확히 물어보세요. 이 부분이 애매하면 실질 시급이 크게 낮아질 수 있습니다.</p></div></div>
-          <div class="tip"><div><h4>여러 건을 묶어서 처리</h4><p>같은 동네에 여러 숙소 세탁 건이 있다면, 빨래방 왕복 횟수를 줄이는 방향으로 동선을 짜면 효율이 크게 오릅니다.</p></div></div>
-          <div class="tip"><div><h4>건조 시간까지 포함해 일정 잡기</h4><p>건조에 보통 40분~1시간이 걸리므로, 다음 일정과 너무 붙여서 잡으면 시간에 쫓기게 됩니다.</p></div></div>
+          <div class="tip"><div><h3>세탁비가 단가에 포함인지 반드시 확인</h3><p>빨래방 이용료가 본인 부담인지, 별도 지급인지 계약 전에 명확히 물어보세요. 이 부분이 애매하면 실질 시급이 크게 낮아질 수 있습니다.</p></div></div>
+          <div class="tip"><div><h3>여러 건을 묶어서 처리</h3><p>같은 동네에 여러 숙소 세탁 건이 있다면, 빨래방 왕복 횟수를 줄이는 방향으로 동선을 짜면 효율이 크게 오릅니다.</p></div></div>
+          <div class="tip"><div><h3>건조 시간까지 포함해 일정 잡기</h3><p>건조에 보통 40분~1시간이 걸리므로, 다음 일정과 너무 붙여서 잡으면 시간에 쫓기게 됩니다.</p></div></div>
         </div>
       
   </section>
 
-  <div style="margin-top:32px;">
-    <a href="index.html" style="font-family:'IBM Plex Mono', monospace; font-size:12.5px; color:var(--brass-deep); text-decoration:none; border-bottom:1px dotted var(--brass-deep);">← 전체 근무일지로 돌아가기</a>
+  <!-- related:start -->
+  <div class="related">
+    <h2>다른 업무 유형도 확인해 보세요</h2>
+    <ul>
+      <li><a href="type-basic.html">기본형 · 턴오버 청소</a></li>
+      <li><a href="type-amenity.html">비품 보충형</a></li>
+      <li><a href="type-livein.html">거주형</a></li>
+      <li><a href="/#rates">지역별 시세 기록 보기</a></li>
+      <li><a href="guide.html">당근·동네알바에서 공고 찾는 법</a></li>
+    </ul>
   </div>
+
+  <!-- related:end -->
+  <div style="margin-top:32px;">
+    <a href="/" style="font-family:'IBM Plex Mono', monospace; font-size:12.5px; color:var(--brass-deep); text-decoration:none; border-bottom:1px dotted var(--brass-deep);">← 전체 근무일지로 돌아가기</a>
+  </div>
+
+  </main>
 
   <footer>
     <span>청소 알바 근무일지 — 정보 제공 목적의 기록 페이지</span>

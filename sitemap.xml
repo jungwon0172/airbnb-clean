@@ -2,55 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://airbnb-clean.vercel.app/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://airbnb-clean.vercel.app/guide.html</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://airbnb-clean.vercel.app/type-basic.html</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://airbnb-clean.vercel.app/type-laundry.html</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://airbnb-clean.vercel.app/type-amenity.html</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://airbnb-clean.vercel.app/type-livein.html</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://airbnb-clean.vercel.app/about.html</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://airbnb-clean.vercel.app/contact.html</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://airbnb-clean.vercel.app/privacy.html</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-11-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
